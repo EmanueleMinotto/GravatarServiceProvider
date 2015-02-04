@@ -1,0 +1,33 @@
+{
+    "authors": [
+        {
+            "email": "minottoemanuele@gmail.com",
+            "name": "Emanuele Minotto"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "EmanueleMinotto\\GravatarServiceProvider\\": "."
+        }
+    },
+    "description": "Gravatar Service Provider for Silex",
+    "keywords": [
+        "gravatar",
+        "service-provider",
+        "silex",
+        "twig"
+    ],
+    "license": "MIT",
+    "name": "emanueleminotto/gravatar-service-provider",
+    "require": {
+        "emanueleminotto/gravatar": "~1",
+        "silex/silex": "~1"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "~4.4",
+        "twig/twig": "~1.12"
+    },
+    "suggest": {
+        "twig/twig": "allows Twig extension integration"
+    }
+}
