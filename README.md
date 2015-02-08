@@ -1,7 +1,15 @@
-Gravatar Service Provider [![Build Status](https://travis-ci.org/EmanueleMinotto/GravatarServiceProvider.svg)](https://travis-ci.org/EmanueleMinotto/GravatarServiceProvider)
-====================
+Gravatar Service Provider
+=========================
+
+[![Build Status](https://img.shields.io/travis/EmanueleMinotto/GravatarServiceProvider.svg?style=flat)](https://travis-ci.org/EmanueleMinotto/GravatarServiceProvider)
+[![SensioLabs Insight](https://img.shields.io/sensiolabs/i/876b86d7-429d-429d-9b01-07f01f2243df.svg?style=flat)](https://insight.sensiolabs.com/projects/876b86d7-429d-429d-9b01-07f01f2243df)
+[![Coverage Status](https://img.shields.io/coveralls/EmanueleMinotto/GravatarServiceProvider.svg?style=flat)](https://coveralls.io/r/EmanueleMinotto/GravatarServiceProvider)
+[![Scrutinizer Code Quality](https://img.shields.io/scrutinizer/g/EmanueleMinotto/GravatarServiceProvider.svg?style=flat)](https://scrutinizer-ci.com/g/EmanueleMinotto/GravatarServiceProvider/)
+[![Total Downloads](https://img.shields.io/packagist/dt/emanueleminotto/gravatar-service-provider.svg?style=flat)](https://packagist.org/packages/emanueleminotto/gravatar-service-provider)
 
 A [Gravatar](http://www.gravatar.com) service provider for [Silex](http://silex.sensiolabs.org/).
+
+API: [emanueleminotto.github.io/GravatarServiceProvider](http://emanueleminotto.github.io/GravatarServiceProvider/)
 
 ## Install
 Install Silex using [Composer](http://getcomposer.org/).
