@@ -16,8 +16,12 @@ use Symfony\Component\HttpFoundation\Request;
 class GravatarServiceProviderTest extends PHPUnit_Framework_TestCase
 {
     /**
+     * Test service registration.
+     * 
      * @covers ::boot
      * @covers ::register
+     *
+     * @return void
      */
     public function testRegisterServiceProvider()
     {
@@ -29,7 +33,11 @@ class GravatarServiceProviderTest extends PHPUnit_Framework_TestCase
     }
 
     /**
+     * Test Twig extension integration in Silex (enabled, default).
+     * 
      * @coversNothing
+     *
+     * @return void
      */
     public function testTwigExtension()
     {
@@ -42,7 +50,11 @@ class GravatarServiceProviderTest extends PHPUnit_Framework_TestCase
     }
 
     /**
+     * Test Twig extension integration in Silex (disabled).
+     * 
      * @coversNothing
+     *
+     * @return void
      */
     public function testMissingTwigExtension()
     {
@@ -58,8 +70,14 @@ class GravatarServiceProviderTest extends PHPUnit_Framework_TestCase
 
     /**
      * Simulates a request and controls the output.
+     * 
+     * @param string $email   User email.
+     * @param string $format  Request format (default json).
+     * @param array  $options Request options.
      *
      * @dataProvider requestDataProvider
+     *
+     * @return void
      */
     public function testRequest($email, $format = 'json', array $options = array())
     {
@@ -80,6 +98,8 @@ class GravatarServiceProviderTest extends PHPUnit_Framework_TestCase
     }
 
     /**
+     * Example profiles.
+     * 
      * @return array
      */
     public function requestDataProvider()

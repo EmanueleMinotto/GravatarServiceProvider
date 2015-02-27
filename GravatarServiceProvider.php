@@ -18,7 +18,11 @@ use Silex\ServiceProviderInterface;
 class GravatarServiceProvider implements ServiceProviderInterface
 {
     /**
-     * {@inheritdoc}
+     * Registers services and parameters on the app.
+     *
+     * @param Application $app Silex application.
+     *
+     * @return void
      */
     public function register(Application $app)
     {
@@ -32,7 +36,11 @@ class GravatarServiceProvider implements ServiceProviderInterface
     }
 
     /**
-     * {@inheritdoc}
+     * Bootstraps the services.
+     *
+     * @param Application $app Silex application.
+     *
+     * @return void
      */
     public function boot(Application $app)
     {
