@@ -60,9 +60,9 @@ class GravatarServiceProviderTest extends PHPUnit_Framework_TestCase
     {
         $app = new Application();
         $app->register(new TwigServiceProvider());
-        $app->register(new GravatarServiceProvider(), array(
+        $app->register(new GravatarServiceProvider(), [
             'gravatar.twig' => false,
-        ));
+        ]);
         $app->boot();
 
         $this->assertFalse($app['twig']->hasExtension('emanueleminotto_gravatar_twigextension'));
@@ -79,7 +79,7 @@ class GravatarServiceProviderTest extends PHPUnit_Framework_TestCase
      *
      * @return void
      */
-    public function testRequest($email, $format = 'json', array $options = array())
+    public function testRequest($email, $format = 'json', array $options = [])
     {
         $app = new Application();
         $app->register(new GravatarServiceProvider());
@@ -104,15 +104,15 @@ class GravatarServiceProviderTest extends PHPUnit_Framework_TestCase
      */
     public function requestDataProvider()
     {
-        return array(
-            array('beau.lebens@gmail.com', 'json', array('callback' => 'test')),
-            array('beau.lebens@gmail.com', 'json'),
-            array('beau.lebens@gmail.com', 'php'),
-            array('beau.lebens@gmail.com', 'qr', array('s' => 150)),
-            array('beau.lebens@gmail.com', 'qr'),
-            array('beau.lebens@gmail.com', 'vcf'),
-            array('beau.lebens@gmail.com', 'xml'),
-            array('beau.lebens@gmail.com'),
-        );
+        return [
+            ['beau.lebens@gmail.com', 'json', ['callback' => 'test']],
+            ['beau.lebens@gmail.com', 'json'],
+            ['beau.lebens@gmail.com', 'php'],
+            ['beau.lebens@gmail.com', 'qr', ['s' => 150]],
+            ['beau.lebens@gmail.com', 'qr'],
+            ['beau.lebens@gmail.com', 'vcf'],
+            ['beau.lebens@gmail.com', 'xml'],
+            ['beau.lebens@gmail.com'],
+        ];
     }
 }
